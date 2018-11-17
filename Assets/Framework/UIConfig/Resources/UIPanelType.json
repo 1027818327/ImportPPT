@@ -1,0 +1,21 @@
+{
+  "infoList": [
+    {
+      "panelTypeString": "Public_Dialog",
+      "path": "PublicModule/UI/Prefabs/Dialog"
+    },
+    {
+      "panelTypeString": "Public_HintView",
+      "path": "PublicModule/UI/Prefabs/Hint"
+    },
+    {
+      "panelTypeString": "ViveCLJX_Login",
+      "path": "ViveCLJX/UI/Prefabs/Login"
+    },
+    {
+      "panelTypeString": "ViveCLJX_Keyboard",
+      "path": "ViveCLJX/UI/Prefabs/Keyboard"
+    }
+
+  ]
+}
