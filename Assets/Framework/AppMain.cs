@@ -18,7 +18,7 @@ namespace Framework.Unity
 #if UNITY_EDITOR
             tempScript.OpenLog();
 #else
-            tempScript.CloseLog();
+            tempScript.OpenLog();
 #endif
             {
                 var tempInstance = MonoHelper.Instance;
