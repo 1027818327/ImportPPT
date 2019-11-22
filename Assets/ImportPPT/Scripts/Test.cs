@@ -122,6 +122,12 @@ namespace ImportPPT
             return sprite;
         }
 
+        private void ReleaseImage()
+        {
+            mSprites = null;
+            Resources.UnloadUnusedAssets();
+        }
+
         private void Show()
         {
             if (mPool == null)
@@ -163,7 +169,8 @@ namespace ImportPPT
         public void ClickImport()
         {
             Process myProcess = new Process();
-            ProcessStartInfo startInfo = new ProcessStartInfo(Application.streamingAssetsPath + "/Ppt2Png.exe", Application.streamingAssetsPath + "/PPTOut");
+            string arugments = string.Format("{0} {1}", Application.streamingAssetsPath + "/PPTOut", 1);
+            ProcessStartInfo startInfo = new ProcessStartInfo(Application.streamingAssetsPath + "/Ppt2Png.exe", arugments);
 
             startInfo.CreateNoWindow = true;
             startInfo.RedirectStandardInput = true;
